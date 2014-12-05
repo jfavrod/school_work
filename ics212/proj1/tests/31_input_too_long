@@ -1,0 +1,17 @@
+#!/bin/bash
+
+declare -a input=(\
+"0\n"\
+"abcdefghijklmnopqrstuvwxyz\n"\
+"1951\n"\
+"46011 Kuneki Pl\n"\
+"\n"\
+"Kaneohe, HI 96744\n"\
+"555-555-5050\n"\
+"3\n"\
+"5\n"\
+)
+
+echo "** Start test 31"
+echo -e ${input[*]} | addrBook
+echo "** End test 31"

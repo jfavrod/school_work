@@ -1,0 +1,47 @@
+/**********************************************************************
+//
+// NAME:        Jason Favrod
+//
+// HOMEWORK:    Proj2
+//
+// CLASS:       ICS 212
+//
+// INSTRUCTOR:  Ravi Narayan
+//
+// DATE:        24 Nov 2014
+//
+// FILE:        getters
+//
+// DESCRIPTION: The header file for getters.cpp.
+//
+***********************************************************************/
+#ifndef GETTERS_H
+#define GETTERS_H
+
+#include "record.h"
+#include "helpers.h"
+#include <stdlib.h>
+#include <ctype.h>
+#include <iostream>
+#include <limits>
+
+
+#define MAX_NAME 25
+#define MAX_ADDR 80
+#define MAX_TELNO 15
+#define MAX_YEAR 2014
+#define MIN_YEAR 1900
+#define MAX_ADDR_LINE MAX_ADDR/2
+#define PARTS_OF_ADDR 3
+
+using namespace std;
+
+char *get_name(void);
+short get_exists(struct record *start, char *name);
+int get_yearofbirth(void);
+char *get_address(void);
+char *get_telno(void);
+char *get_field(void);
+char *get_update(char field[]);
+struct record get_new_record(char persist_file_entry[]);
+#endif

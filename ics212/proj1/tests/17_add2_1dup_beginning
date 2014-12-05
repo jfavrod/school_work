@@ -1,0 +1,23 @@
+#!/bin/bash
+
+declare -a input=(\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Anakin Skywalker\n"\
+"1901\n"\
+"7 Electric Ave\n"\
+"New York, NY, 12904\n"\
+"899-123-2134\n"\
+"3\n"\
+"5\n"\
+)
+
+echo "** Start test 17"
+echo -e ${input[*]} | addrBook
+echo "** End test 17"

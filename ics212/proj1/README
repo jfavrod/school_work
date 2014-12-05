@@ -1,0 +1,86 @@
+To Build the addrBook Application:
+    $> make
+
+    Grabs all necessary files from the SCCS directory and builds object
+    code - I think it'd be better if I took advantage of the fact
+    that I save object code whenever it's compiled. Compiles the
+    obj. code into the executable addrBook.
+
+To Test the Application:
+    $> runtests
+
+    Prerq: the runtests script and the scripts in the tests dir need to
+    be executable.
+
+    All tests, as outlined in the test plan pdf are scripted and stored
+    in the tests directory. Running the runtests script performs the
+    tests and writes the output to a file named 'test_output'.
+
+    I tried to use POSIX compliant scripting for testing system, but I
+    do not know how it will work on other systems (developed on SPARC).
+
+
+Proof of compilation using SCCS and make:
+
+++ Begin ++
+
+make addrBook
+make[1]: Entering directory `/home04/f/favrod/hw/proj1'
+if [ ! -f "helpers.c" ]; then \
+	    sccs get helpers.c; \
+	fi;
+1.4
+148 lines
+if [ ! -f "helpers.h" ]; then \
+	    sccs get helpers.h; \
+	fi;
+1.3
+26 lines
+gcc -ansi -Wall -c helpers.c
+if [ ! -f "getters.c" ]; then \
+	    sccs get getters.c; \
+	fi;
+1.10
+515 lines
+if [ ! -f "getters.h" ]; then \
+	    sccs get getters.h; \
+	fi;
+1.6
+39 lines
+if [ ! -f "record.h" ]; then \
+	    sccs get record.h; \
+	fi;
+1.4
+34 lines
+gcc -ansi -Wall -c getters.c
+if [ ! -f "actions.c" ]; then \
+	    sccs get actions.c; \
+	fi;
+1.28
+481 lines
+if [ ! -f "actions.h" ]; then \
+	    sccs get actions.h; \
+	fi;
+1.10
+37 lines
+gcc -ansi -Wall -c actions.c
+if [ ! -f "addrBookUI.c" ]; then \
+	    sccs get addrBookUI.c; \
+	fi
+1.18
+327 lines
+if [ ! -f "addrBookUI.h" ]; then \
+	    sccs get addrBookUI.h; \
+	fi
+1.7
+31 lines
+gcc -ansi -Wall -c addrBookUI.c
+gcc -ansi -Wall -o addrBook helpers.o getters.o actions.o addrBookUI.o
+make[1]: Leaving directory `/home04/f/favrod/hw/proj1'
+make clean
+make[1]: Entering directory `/home04/f/favrod/hw/proj1'
+mv *.o bld/
+sccs clean
+make[1]: Leaving directory `/home04/f/favrod/hw/proj1'
+
+++ End proof of compilation ++

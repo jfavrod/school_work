@@ -1,0 +1,12 @@
+#!/bin/bash
+
+declare -a input=(\
+"4\n"\
+"Testy McGee\n"\
+"3\n"\
+"5\n"\
+)
+
+echo "** Start test 09"
+echo -e ${input[*]} | addrBook
+echo "** End test 09"

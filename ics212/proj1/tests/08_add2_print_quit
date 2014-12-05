@@ -1,0 +1,23 @@
+#!/bin/bash
+
+declare -a input=(\
+"0\n"\
+"Princess Leia\n"\
+"1992\n"\
+"23 Jordan St\n"\
+"Apt B\n"\
+"Honolulu, HI 96892\n"\
+"808-555-9876\n"\
+"0\n"\
+"Jack and Jill\n"\
+"1980\n"\
+"1 Pail of Water\n"\
+"\n"\
+"Up-a-hill, TN 82313\n"\
+"810-234-1234\n"\
+"3\n"\
+"5\n")
+
+echo "** Start test 08"
+echo -e ${input[*]} | addrBook
+echo "** End test 08"

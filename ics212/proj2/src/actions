@@ -1,0 +1,32 @@
+/**********************************************************************
+//
+// NAME:        Jason Favrod
+//
+// HOMEWORK:    Proj2
+//
+// CLASS:       ICS 212
+//
+// INSTRUCTOR:  Ravi Narayan
+//
+// DATE:        24 Nov 2014
+//
+// FILE:        actions
+//
+// DESCRIPTION: The header file for actions.cpp.
+//
+***********************************************************************/
+#ifndef ACTIONS
+#define ACTIONS
+
+#include "llist.h"
+#include "getters"
+
+using namespace std;
+
+void add_record(llist&);
+void mod_record(llist&, int *);
+void find_and_print(llist&);
+void print(llist&);
+void del_record(llist&);
+
+#endif

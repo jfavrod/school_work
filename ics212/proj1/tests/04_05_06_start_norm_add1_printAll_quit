@@ -1,0 +1,8 @@
+#!/bin/bash
+
+declare -a input=("0\n""Testy McGee\n""1921\n""123 Four St\n""\n"\
+"Hollywood, CA 90210\n""899-123-2134\n""3\n""5\n")
+
+echo "** Start test 04"
+echo -e ${input[*]} | addrBook
+echo "** End test 04"

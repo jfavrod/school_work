@@ -1,0 +1,78 @@
+======
+Report
+======
+Tested all requirements of project 1 and project 2.
+Tests pass and the address book is working as expected.
+
+(See test_output)
+
+Can add and remove items to the address book, and open
+and close the program with contents persistance. Print
+all and print single record works. Handles invald
+input and does not crash.
+
+I believe the overall look and feel of the application
+has improved, and the address entry is now to spec.
+
+I would like to make the menu selection more user
+friendly change my make file scheme.
+
+
+==================
+Building Project 2
+==================
+
+-----------------------------
+Issue the following commands:
+-----------------------------
+
+* If no source in src
+    > sccs -d $HOME/hw get -r2.0 getrelease
+    > ./getrelease
+    > make [or make debug]
+
+* If source
+    > make
+    > make debug
+
+
+===================
+Files & Directories
+===================
+
+----
+dirs
+----
+src     source code
+blds    object code
+
+
+------
+Other
+------
+OUTPUT          Proof of sccs checkout and compilation.
+
+
+------
+Source
+------
+actions.cpp     The function definitions for UI functions.
+getters.cpp     Functions for getting data from the user.
+llist.cpp       The Implementation of the llist class.
+proj2.cpp       The UI.
+
+
+-------
+Headers
+-------
+actions         The header for actions.cpp.
+getters         The header for getters.cpp.
+llist.h         The definition of the llist class.
+proj2.h         The header file for proj2.cpp.
+
+
+---------
+Binaries
+---------
+addrBook        Regular address book program (default make).
+addrBookdb      Address book program in debug mode (make debug).

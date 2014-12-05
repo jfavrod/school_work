@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a input=(\
+"0\n"\
+"Christopher Foo\n"\
+"one-thousand nine hundred eighty seven\n"\
+"1987\n"\
+"1111 Dole Street\n"\
+"University of Hawaii\n"\
+"Honolulu, HI 96822\n"\
+"808-555-5555\n"\
+"3\n"\
+"5\n"\
+)
+
+echo "** Start test 32"
+echo -e ${input[*]} | addrBook
+echo "** End test 32"

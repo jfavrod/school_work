@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a input=(\
+"4\n"\
+"Princess Leia\n"\
+"4\n"\
+"Anakin Skywalker\n"\
+"4\n"\
+"abcdefghijklmnopqrstuvwx\n"\
+"4\n"\
+"Christopher Foo\n"\
+"1\n"\
+"5\n"\
+)
+
+echo "** Start test 34"
+echo -e ${input[*]} | addrBook
+echo "** End test 34"

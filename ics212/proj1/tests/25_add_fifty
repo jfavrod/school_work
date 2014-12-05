@@ -1,0 +1,361 @@
+#!/bin/bash
+
+count=0
+
+declare -a input=(\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"0\n"\
+"Luke Skywalker\n"\
+"1924\n"\
+"123 Four Street\n"\
+"\n"\
+"Tatooine, SY 90202\n"\
+"123-2134\n"\
+"5\n"
+)
+
+echo "** Start test 25"
+echo -e ${input[*]} | addrBook
+echo "** End test 25"

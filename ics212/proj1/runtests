@@ -1,0 +1,30 @@
+#!/bin/bash
+
+tests_dir="tests"
+outfile="test_output"
+
+if [ -d "$tests_dir" ];then
+    tmplt=0
+    num_tests=$(ls $tests_dir | wc -l)
+    persist_file=".persistance_file"
+
+    cat /dev/null > $persist_file
+    cat /dev/null > $outfile
+
+    if [ -f "$tests_dir/tmplt" ];then
+        tmplt=1
+    fi
+
+    x=0
+    while [ "$x" -lt "$(($num_tests - $tmplt))" ];do
+        if [ "$x" -lt 10 ]; then
+            t="0$x" 
+        else
+            t="$x"
+        fi
+        "$tests_dir/$t"_* >> $outfile
+        x=$(($x + 1))
+    done
+fi
+
+cat $outfile | less

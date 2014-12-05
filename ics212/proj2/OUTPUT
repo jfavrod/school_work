@@ -1,0 +1,134 @@
+favrod@uhx01:~/hw/proj2$ ls
+blds    OUTPUT  README  src
+favrod@uhx01:~/hw/proj2$ 
+
+
+favrod@uhx01:~/hw/proj2$ sccs get -r2 getrelease
+2.1
+26 lines
+No id keywords (cm7)
+favrod@uhx01:~/hw/proj2$ ls
+blds        getrelease  OUTPUT      README      src
+
+
+favrod@uhx01:~/hw/proj2$ ./getrelease 
+2.1
+82 lines
+No id keywords (cm7)
+1.6
+234 lines
+No id keywords (cm7)
+1.2
+27 lines
+No id keywords (cm7)
+1.1
+34 lines
+No id keywords (cm7)
+1.3
+169 lines
+No id keywords (cm7)
+1.3
+32 lines
+No id keywords (cm7)
+1.3
+386 lines
+No id keywords (cm7)
+1.6
+47 lines
+No id keywords (cm7)
+1.8
+620 lines
+No id keywords (cm7)
+1.8
+55 lines
+No id keywords (cm7)
+1.6
+181 lines
+No id keywords (cm7)
+1.4
+8 lines
+No id keywords (cm7)
+
+
+favrod@uhx01:~/hw/proj2$ make
+make addrBook
+make[1]: Entering directory `/home04/f/favrod/hw/proj2'
+mv src/record.h .
+mv src/helpers.h .
+mv src/getters .
+mv src/llist.h .
+mv src/actions .
+mv src/proj2.h .
+mv src/proj2.cpp .
+mv src/getters.cpp .
+g++ -ansi -Wall -c getters.cpp
+mv src/helpers.c .
+g++ -ansi -Wall -c helpers.c
+mv src/actions.cpp .
+g++ -ansi -Wall -c actions.cpp
+mv src/llist.cpp .
+g++ -ansi -Wall -c llist.cpp
+g++ -ansi -Wall -o addrBook helpers.o getters.o llist.o actions.o proj2.cpp
+make[1]: Leaving directory `/home04/f/favrod/hw/proj2'
+make clean
+make[1]: Entering directory `/home04/f/favrod/hw/proj2'
+if [ -f *.o ]; then \
+            mv *.o blds; \
+        fi
+if [ -f *.{c,cpp,h} ]; then \
+            mv *.{c,cpp,h} src; \
+        fi
+if [ -f actions ]; then \
+            mv actions src; \
+        fi
+if [ -f getters ]; then \
+            mv getters src; \
+        fi
+sccs -d /home/f/favrod/hw clean
+make[1]: Leaving directory `/home04/f/favrod/hw/proj2'
+favrod@uhx01:~/hw/proj2$ ls
+addrBook  blds      OUTPUT    README    src
+
+
+favrod@uhx01:~/hw/proj2$ get makefile
+2.1
+85 lines
+No id keywords (cm7)
+favrod@uhx01:~/hw/proj2$ make debug
+mv src/record.h .
+mv src/helpers.h .
+mv src/getters .
+mv src/llist.h .
+mv src/actions .
+mv src/proj2.h .
+mv src/proj2.cpp .
+mv src/getters.cpp .
+g++ -ansi -Wall -c getters.cpp
+mv src/helpers.c .
+g++ -ansi -Wall -c helpers.c
+mv src/actions.cpp .
+g++ -ansi -Wall -c actions.cpp
+mv src/llist.cpp .
+g++ -ansi -Wall -c llist.cpp
+g++ -ansi -Wall -D DEBUG -o addrBookdb helpers.o getters.o llist.o actions.o proj2.cpp
+make clean
+make[1]: Entering directory `/home04/f/favrod/hw/proj2'
+if [ -f *.o ]; then \
+            mv *.o blds; \
+        fi
+if [ -f *.c* ]; then \
+            mv *.c* src; \
+        fi
+if [ -f *.h ]; then \
+            mv *.h src; \
+        fi
+if [ -f actions ]; then \
+            mv actions src; \
+        fi
+if [ -f getters ]; then \
+            mv getters src; \
+        fi
+sccs -d /home/f/favrod/hw clean
+make[1]: Leaving directory `/home04/f/favrod/hw/proj2'
+favrod@uhx01:~/hw/proj2$ ls
+addrBook    addrBookdb  blds        OUTPUT      README      src

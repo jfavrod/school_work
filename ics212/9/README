@@ -1,0 +1,27 @@
+======
+source
+======
+
+-------
+Headers
+-------
+Animal.h        An Animal Parent Class.
+Bird.h          A Type of Animal Class.
+Cow.h           A Type of Animal Class.
+
+--------
+
+Animal.cc       Animal Class Constructor and
+                virtual methods.
+Bird.cc         The Bird Animal Implementation.
+Cow.cc          The Cow Animal Implementation.
+
+farm.cc         The Executable.
+
+
+==========
+Executable
+==========
+
+farm            Does stuff with the Animals.
+makefile        Instructions for make to build executables.

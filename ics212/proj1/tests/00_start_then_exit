@@ -1,0 +1,7 @@
+#!/bin/bash
+
+declare -a input=("5\n")
+
+echo "** Start test 00"
+echo -e ${input[*]} | addrBook
+echo "** End test 00"

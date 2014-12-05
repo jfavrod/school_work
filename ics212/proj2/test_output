@@ -1,0 +1,866 @@
+** Start test 00
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 00
+** Start test 01
+addrBook: invalid argument
+usage:
+addrBook
+** End test 01
+** Start test 02
+addrBook: invalid argument
+usage:
+addrBook
+** End test 02
+** Start test 03
+addrBook: invalid argument
+usage:
+addrBook
+** End test 03
+** Start test 04
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Testy McGee
+123 Four St
+Apt 1a
+ Hollywood, CA 90210
+1921
+899-123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 04
+** test 05 part of test 04
+** test 06 part of test 04
+** Start test 07
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Testy McGee
+123 Four St
+Apt 1a
+ Hollywood, CA 90210
+1921
+899-123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 07
+** Start test 08
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Testy McGee
+123 Four St
+Apt 1a
+ Hollywood, CA 90210
+1921
+899-123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Princess Leia
+23 Jordan St
+Apt B
+Honolulu, HI 96892
+1992
+808-666-9876
+-------------------------
+
+
+-------------------------
+Jack and Jill
+1 Pail of Water
+Up-a-hill, TN 82313
+1980
+810-234-1234
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 08
+** Start test 09
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Princess Leia
+23 Jordan St
+Apt B
+Honolulu, HI 96892
+1992
+808-666-9876
+-------------------------
+
+
+-------------------------
+Jack and Jill
+1 Pail of Water
+Up-a-hill, TN 82313
+1980
+810-234-1234
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 09
+** Start test 10
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Princess Leia
+23 Jordan St
+Apt B
+Honolulu, HI 96892
+1992
+808-666-9876
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 10
+** Start test 11
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Address book is empty
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 11
+** Start test 12
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Address book is empty
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 12
+** Start test 13
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 13
+** Start test 14
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 2 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Address book is empty
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 14
+** Start test 15
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 15
+** Start test 16
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 2 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 16
+** Start test 17
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 17
+** Start test 18
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 2 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 18
+** Start test 19
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Name (24 char max): Enter address then hit enter twice.
+Year of Birth [1900 - 2014]: Telephone Number: What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Princess Leia
+23 Jordan St
+Apt B
+Honolulu, HI 96892
+1992
+808-555-9876
+-------------------------
+
+
+-------------------------
+Jack and Jill
+1 Pail of Water
+Up-a-hill, TN 82313
+1980
+810-234-1234
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 19
+** Start test 20
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Anakin Skywalker
+7 Electric Ave
+New York, NY, 12904
+1901
+899-123-2134
+-------------------------
+
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Jack and Jill
+1 Pail of Water
+Up-a-hill, TN 82313
+1980
+810-234-1234
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 20
+** Start test 21
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Delete record by name
+Name (24 char max): Deleted 1 matches
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+
+-------------------------
+Luke Skywalker
+123 Four Street
+Tatooine, SY 90202
+1924
+123-2134
+-------------------------
+
+
+-------------------------
+Jack and Jill
+1 Pail of Water
+Up-a-hill, TN 82313
+1980
+810-234-1234
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 21
+** Start test 22
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Get record by name
+Name (24 char max): 
+-------------------------
+name:Luke Skywalker
+address:123 Four Street
+Tatooine, SY 90202
+yob:1924
+telno:123-2134
+-------------------------
+
+What would you like to do?
+0: Add a new record
+1: Modify a record
+2: Print a record
+3: Print all info
+4: Delete a record
+5: Reverse the list
+6: Quit the program
+Goodbye
+** End test 22

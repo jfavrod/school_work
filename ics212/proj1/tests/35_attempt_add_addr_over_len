@@ -1,0 +1,20 @@
+#!/bin/bash
+
+declare -a input=(\
+"0\n"\
+"John Doe\n"\
+"1999\n"\
+"abcdefghijklmnopqrstuvwxyz\n"\
+"abcdefghijklmnopqrstuvwxyz\n"\
+"abcdefghijklmnopqrstuvwxyz\n"\
+"1 First Street\n"\
+"Apt 1\n"\
+"Onesville, PA 16789\n"\
+"814-908-0987\n"\
+"3\n"\
+"5\n"\
+)
+
+echo "** Start test 35"
+echo -e ${input[*]} | addrBook
+echo "** End test 35"

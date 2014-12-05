@@ -1,0 +1,110 @@
+To create the homework executables:
+    make all clean
+
+Will produce two exectables, B and C, which are my submissions for the
+respective homework parts with this README in addition to the makefile
+my submission for part A of the homework (HW2).
+
+#--------------------------------------------------------------#
+# Explanation of the purpose and benefits of the make utility. #
+#--------------------------------------------------------------#
+Make is a pretty convenient utility. And I guess that's one of its
+benefits, that it is convenient. So far I understand it make runs
+makefiles and a makefile is basically a script for building
+executables.
+
+So instead of needing to compile each source file individually and
+needing to remember which files need to be compiled for which
+executable, the make utility - in conjunction with the makefile - is
+used to keep track of this information.
+
+It also helps to keep the project organized. As long as the programmer
+keeps with the conventions set forth in the makefile and creates the
+binaries with make, source object etc. files will always be found in
+their designated place. This organizational benefit also safe guards
+against the accidential overwritting or deletion of important files.
+
+When distributing the software, make can also serve as an easy way for
+others to build the executables for their respective systems, and for
+other developers to maintain the project layout of the orginial
+author(s).
+
+I know I've just scratch the surface of make (apparently it can be used
+for more than just C programs), but I believe the example in this
+directory shows its basic usage.
+
+#----------------------#
+# Proof of Compilation #
+#----------------------#
+favrod@uhx01:~/hw/2$ make all clean
+gcc -c source/B.c includes/header.h
+gcc -c source/find_max.c
+gcc -c source/strappend.c
+gcc -o B B.o find_max.o strappend.o
+gcc -c source/C.c
+gcc -o C C.o
+mv B.o find_max.o strappend.o builds
+mv C.o builds
+
+#---------------#
+# Sample Output #
+#---------------#
+B:
+The test float array is:
+[ 16838.00, 5758.00, 10113.00, 17515.00, 31051.00, 5627.00, 23010.00, 7419.00, 16212.00, 4086.00 ]
+The index of the max float is: 4
+
+The test float array is:
+[ 2749.00, 12767.00, 9084.00, 12060.00, 32225.00, 17543.00, 25089.00, 21183.00, 25137.00, 25566.00 ]
+The index of the max float is: 4
+
+The test float array is:
+[ 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00 ]
+The index of the max float is: 0
+
+String 1 is: Test String1
+String 2 is: Test String2
+After we append string 2 to string 1,
+String 1 is: Test String1Test String2
+
+Let's leave the strings unchanged
+String 1 is: Test String1Test String2
+String 2 is: Test String2
+After we append string 2 to string 1,
+String 1 is: Test String1Test String2Test String2
+
+Now let's set both strings to null char
+String 1 is: 
+String 2 is: 
+After we append string 2 to string 1,
+String 1 is: 
+
+C:
+The test string1 is: 
+The length of the test string1 is: 0
+The test string2 is: string_is_13
+The length of the test string2 is: 12
+The two strings not are equal
+
+Now copy string 1 to string 2.
+Now string 1 is: string_is_13
+Now string 2 is: string_is_13
+The two strings are equal
+
+Using strchr to replace all '_' in string 1.
+Now string 1 is: string is 13
+The two strings not are equal
+
+The strings are still the same length.
+The length of the test string1 is: 12
+The length of the test string2 is: 12
+
+Now let's put back the underscores.
+Now string 1 is: string_is_13
+The two strings are equal
+
+Let's try to do the find and replace with the strpbrk function
+Now string 2 is: string is 13
+The two strings not are equal
+Now string 2 is: string_is_13
+The two strings are equal
