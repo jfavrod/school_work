@@ -1,0 +1,10 @@
+ remove (T item) {
+     numRemoved -> 0;
+     while not done {
+         pos = myList.find(item)
+         if pos == -1
+             done = true;
+        else
+     }
+     return numRemoved;
+ }

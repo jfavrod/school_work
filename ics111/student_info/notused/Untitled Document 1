@@ -1,0 +1,12 @@
+//                if (dexter.checkPointsArray() != false) {
+//                    System.out.println("Did the student earn points for this class, 'y' or 'n'?");
+//                    String confirm_points = keyboard.next("(y|n|Y|N)");
+//                    System.out.println("What grade point did the student earn for that class?");
+//                    double point = keyboard.nextDouble();
+//                    dexter.setGradePoint(point);
+//                }
+//                else { break; }
+
+        String s1 = dexter.getStudentName(), s2 = dexter.getStudentMajor();
+        dexter.updateStudentGpa();
+        double s3 = dexter.getStudentGpa();
