@@ -15,10 +15,9 @@
 // DESCRIPTION: A program that converts between celcius and fahrenheit.
 //
 ***********************************************************************/
-#define ROUND 5
+#include "Hw10.h"
 
-int round_up(int);
-float convertftoC(int fahrenheit);
+#define ROUND 5
 
 
 /*****************************************************************
@@ -33,7 +32,7 @@ float convertftoC(int fahrenheit);
  *  Return values:       rounded (int) : The round value.
  *
  ****************************************************************/
-int round_up(int temp)
+JNIEXPORT jint JNICALL Java_Hw10_round_1up (JNIEnv *env, jclass jc, jint temp)
 {
     int remainder = temp % ROUND;
     int rounded = (remainder == 0) ? temp : ((temp - remainder) + ROUND);
@@ -41,9 +40,22 @@ int round_up(int temp)
 }
 
 
-float convertftoC(int fahrenheit)
+/*****************************************************************
+ *
+ *  Function name:      convertFtoC
+ *
+ *  DESCRIPTION:        Performs the Fahrenheit to Celcius conversion.
+ *
+ *  Parameters:         fahrenheit (jint): An int passed in from a
+ *                      java UI; the Fahrenheit temp.
+ *
+ *  Return values:      int : The Celcius conversion.
+ *
+ ****************************************************************/
+
+JNIEXPORT jfloat JNICALL Java_Hw10_convertFtoC (JNIEnv *env, jclass jclass, jint fahrenheit)
 {
-    double celcius;
-    celcius = 5 * ((double)fahrenheit - 32) / 9;
+    float celcius;
+    celcius = 5 * ((float)fahrenheit - 32) / 9;
     return celcius;
 }
