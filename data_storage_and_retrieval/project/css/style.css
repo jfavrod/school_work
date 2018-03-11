@@ -1,0 +1,119 @@
+body {
+    background-image: url('../img/soft_circle_scales.png');
+}
+
+table, .panel, .panel-body li{
+    background-color: #eeeeee;
+}
+
+table th, .panel-heading {
+    background-image: url('../img/3px_tile.png');
+    color: white;
+    text-align: center;
+}
+
+.panel-heading h3 {
+    color: white;
+    text-align: center;
+}
+
+.table-title {
+    text-align: center;
+}
+
+#header-row {
+    min-height: 50px;
+}
+
+#header-row a {
+    background-image: url('../img/old_moon.png');
+}
+
+#header-row a:hover {
+    color: crimson;
+}
+
+#content-row {
+    min-height: 50px;
+}
+
+#current-trans {
+    border: 1px solid gray;
+    min-height: 25px;
+}
+
+#categories, #category-heading, #categories li {
+    border: 1px solid black;
+}
+
+#artist-in-name {
+    width: 100%;
+}
+
+#artist-in-age {
+    width: 35px;
+}
+
+.input-wide {
+    width: 100%;
+}
+
+.datepicker {
+    width: 80px;
+}
+
+th:hover {
+    cursor: pointer;
+}
+
+#style-heading-span {
+    color: red;
+    cursor: pointer;
+    font-size: 10pt;
+}
+
+#style-heading-span:hover {
+    color: crimson;
+}
+
+#styles input {
+    width: 95%;
+}
+
+#login-containter .jumbotron {
+    background-image: url('../img/3px_tile.png');
+}
+
+#login input {
+    height: 30px;
+    width: 250px;
+    margin-bottom: 4%;
+}
+
+#login button {
+    width: 100px;
+}
+
+.glowing-border {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.border-success {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+    outline: none;
+    border-color: #00ff00;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+.border-failure {
+    border: 2px solid #dadada;
+    border-radius: 7px;
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
